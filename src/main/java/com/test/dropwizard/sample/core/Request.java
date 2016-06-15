@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.core;
+package com.test.dropwizard.sample.core;
 
 import io.dropwizard.jackson.JsonSnakeCase;
 import java.time.LocalDateTime;

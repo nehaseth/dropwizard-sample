@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.core;
+package com.test.dropwizard.sample.core;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.flipkart.ep</groupId>
-	<artifactId>scenarioValidationService</artifactId>
+	<artifactId>dropwizardSample</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
@@ -99,7 +99,7 @@
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.test.ep.scenarioValidationService.ValidationServiceApplication</mainClass>
+									<mainClass>com.test.dropwizard.sample.ValidationServiceApplication</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>

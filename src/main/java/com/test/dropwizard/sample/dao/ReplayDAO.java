@@ -1,6 +1,6 @@
-package com.test.ep.scenarioValidationService.dao;
+package com.test.dropwizard.sample.dao;
 
-import com.test.ep.scenarioValidationService.core.Replay;
+import com.test.dropwizard.sample.core.Replay;
 import com.google.inject.Inject;
 import io.dropwizard.hibernate.AbstractDAO;
 import java.util.List;
@@ -17,11 +17,11 @@ public class ReplayDAO extends AbstractDAO<Replay> {
 	}
 
 	public List<Replay> findAll() {
-		return list(namedQuery("com.test.ep.scenarioValidationService.core.Replay.findAllReplays"));
+		return list(namedQuery("com.test.ep.dropwizardSample.core.Replay.findAllReplays"));
 	}
 
 	public List<Replay> findRequestsForReplayId(Long replayId) {
-		return list(namedQuery("com.test.ep.scenarioValidationService.core.Replay.findByReplayId")
+		return list(namedQuery("com.test.ep.dropwizardSample.core.Replay.findByReplayId")
 				.setParameter("replayId", replayId));
 	}
 }

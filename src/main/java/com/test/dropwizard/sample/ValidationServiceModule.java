@@ -1,9 +1,9 @@
-package com.test.ep.scenarioValidationService;
+package com.test.dropwizard.sample;
 
 
-import com.test.ep.scenarioValidationService.configuration.ValidationServiceConfiguration;
-import com.test.ep.scenarioValidationService.core.Replay;
-import com.test.ep.scenarioValidationService.core.Request;
+import com.test.dropwizard.sample.configuration.ValidationServiceConfiguration;
+import com.test.dropwizard.sample.core.Replay;
+import com.test.dropwizard.sample.core.Request;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;

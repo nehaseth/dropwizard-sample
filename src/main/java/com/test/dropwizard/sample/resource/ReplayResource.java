@@ -1,7 +1,7 @@
-package com.test.ep.scenarioValidationService.resource;
+package com.test.dropwizard.sample.resource;
 
-import com.test.ep.scenarioValidationService.core.Replay;
-import com.test.ep.scenarioValidationService.dao.ReplayDAO;
+import com.test.dropwizard.sample.dao.ReplayDAO;
+import com.test.dropwizard.sample.core.Replay;
 import com.google.inject.Inject;
 import io.dropwizard.hibernate.UnitOfWork;
 import java.util.List;

@@ -1,8 +1,8 @@
-package com.test.ep.scenarioValidationService;
+package com.test.dropwizard.sample;
 
-import com.test.ep.scenarioValidationService.configuration.ValidationServiceConfiguration;
-import com.test.ep.scenarioValidationService.resource.DefaultResource;
-import com.test.ep.scenarioValidationService.resource.ReplayResource;
+import com.test.dropwizard.sample.configuration.ValidationServiceConfiguration;
+import com.test.dropwizard.sample.resource.DefaultResource;
+import com.test.dropwizard.sample.resource.ReplayResource;
 import com.hubspot.dropwizard.guice.GuiceBundle;
 import io.dropwizard.Application;
 import io.dropwizard.hibernate.HibernateBundle;

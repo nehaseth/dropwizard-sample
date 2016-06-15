@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.core;
+package com.test.dropwizard.sample.core;
 
 import io.dropwizard.jackson.JsonSnakeCase;
 import javax.persistence.Column;
@@ -20,9 +20,9 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "replays")
 @NamedQueries({
-		@NamedQuery(name = "com.test.ep.scenarioValidationService.core.Replay.findByReplayId",
+		@NamedQuery(name = "com.test.ep.dropwizardSample.core.Replay.findByReplayId",
 				query = "select e from Replay e where e.replayId= :replayId" ),
-		@NamedQuery(name = "com.test.ep.scenarioValidationService.core.Replay.findAllReplays",
+		@NamedQuery(name = "com.test.ep.dropwizardSample.core.Replay.findAllReplays",
 				query = "select e from Replay e")
 }
 )

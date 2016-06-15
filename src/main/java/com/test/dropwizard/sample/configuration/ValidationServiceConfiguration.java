@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.configuration;
+package com.test.dropwizard.sample.configuration;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;

@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.constants;
+package com.test.dropwizard.sample.constants;
 
 /**
  * Created by neha.seth on 13/06/16.

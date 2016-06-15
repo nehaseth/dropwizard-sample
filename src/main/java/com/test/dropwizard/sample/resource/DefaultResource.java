@@ -1,4 +1,4 @@
-package com.test.ep.scenarioValidationService.resource;
+package com.test.dropwizard.sample.resource;
 
 import com.google.inject.Inject;
 import io.dropwizard.db.DataSourceFactory;
