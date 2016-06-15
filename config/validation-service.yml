@@ -1,0 +1,18 @@
+validatorDatabase:
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password:
+  url: jdbc:mysql://localhost/validator
+  properties:
+      charSet: UTF-8
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate.generate_statistics: false
+      hibernate.current_session_context_class: thread
+      hibernate.show_sql: false
+  minSize: 8
+  maxSize: 10
+  checkConnectionWhileIdle: true
+  maxWaitForConnection: 1s
+  validationQuery: "/* Health Check */ SELECT 1"
+  logValidationErrors: true
+  checkConnectionOnBorrow: true
