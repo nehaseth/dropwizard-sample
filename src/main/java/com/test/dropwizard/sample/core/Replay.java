@@ -6,26 +6,21 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  * Created by neha.seth on 13/06/16.
  */
-@JsonSnakeCase
-@NoArgsConstructor
+@Data
 @Entity
+@NoArgsConstructor
+@JsonSnakeCase
 @Table(name = "replays")
-@NamedQueries({
-		@NamedQuery(name = "com.test.ep.dropwizardSample.core.Replay.findByReplayId",
-				query = "select e from Replay e where e.replayId= :replayId" ),
-		@NamedQuery(name = "com.test.ep.dropwizardSample.core.Replay.findAllReplays",
-				query = "select e from Replay e")
-}
-)
 public class Replay extends BaseEntity {
 
 	@Id
@@ -38,12 +33,8 @@ public class Replay extends BaseEntity {
 	private Long replayId;
 
 	@NotNull
-	@Column(name = "request_id")
-	private Long requestId;
-
-	public Replay(Long replayId, Long requestId) {
-		this.replayId = replayId;
-		this.requestId = requestId;
-	}
+	@ManyToOne
+	@JoinColumn(name = "request_id", referencedColumnName = "request_id", nullable = false)
+	private Request requestId;
 
 }
